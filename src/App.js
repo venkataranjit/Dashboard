@@ -11,6 +11,8 @@ import Customers from './components/Customers';
 import Reports from './components/Reports'; 
 import Integrations from './components/Integrations';
 import Signout from './components/Signout';
+import Error from './components/Error';
+
 
 function App() {
  
@@ -29,6 +31,7 @@ function App() {
                   <Route path='/Reports' element={<Reports />} />
                   <Route path='/Integrations' element={<Integrations />} />
                   <Route path='/Signout' element={<Signout />} />
+                  <Route path='*' element={<Error />} />
                 </Routes>
             </div>
           </div>
