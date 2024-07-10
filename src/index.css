@@ -86,3 +86,7 @@ body {
 a.nav-link.active {
   color: #007bffed;
 }
+.jumbotron{
+  margin-bottom: 100px;
+  padding: 2rem 1rem;
+}
