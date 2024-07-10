@@ -1,6 +1,6 @@
 import React from "react";
-
 let Orders = () => {
+
   return (
     <>
       <main
@@ -19,7 +19,7 @@ let Orders = () => {
               something more unique.
             </p>
             <p>
-              <a className="btn btn-primary btn-lg" href="#" role="button">
+              <a className="btn btn-primary btn-lg" href="/" role="button">
                 Learn more »
               </a>
             </p>

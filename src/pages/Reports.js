@@ -6,8 +6,8 @@ const Reports = () => {
 
   const getData = async () => {
     try {
-      const resp = await fetch("/data/wine.json");
-      // const resp = await fetch('https://api.sampleapis.com/wines/reds');
+      // const resp = await fetch("/data/wine.json");
+      const resp = await fetch('https://api.sampleapis.com/wines/reds');
       if (!resp.ok) {
         throw new Error("Failed to fetch data");
       }

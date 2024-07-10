@@ -2,7 +2,7 @@ import React from "react";
 
 let Integrations = () => {
   return (
-    <>
+    <> 
       <main
         role="main"
         className="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"
@@ -19,7 +19,7 @@ let Integrations = () => {
               something more unique.
             </p>
             <p>
-              <a className="btn btn-primary btn-lg" href="#" role="button">
+              <a className="btn btn-primary btn-lg" href="/" role="button">
                 Learn more »
               </a>
             </p>
