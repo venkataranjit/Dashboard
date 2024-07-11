@@ -1,7 +1,6 @@
 import React from "react";
 import "./Products.css";
 import ProductsItem from "../components/ProductsItem";
-import ProductsItemSingle from "./ProductsItemSingle";
 
 let Products = () => {
   let itemNameD = [

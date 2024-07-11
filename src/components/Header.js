@@ -5,7 +5,7 @@ let Header = () => {
   return (
     <>
       <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-        <Link to={"/"} className="navbar-brand col-sm-3 col-md-2 mr-0">
+        <Link to={"Dashboard"} className="navbar-brand col-sm-3 col-md-2 mr-0">
           Company name
         </Link>
         <input
@@ -17,7 +17,7 @@ let Header = () => {
         />
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap">
-            <Link to={"/Signout"} className="nav-link">
+            <Link to={"/"} className="nav-link">
               Sign out
             </Link>
           </li>

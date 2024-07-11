@@ -22,7 +22,7 @@ let ProductsItem = (props) => {
             <div className="d-flex justify-content-between align-items-center">
               <div className="btn-group">
                 <Link
-                  to={"/ProductsItemSingle"}
+                  to={"/dashboard/ProductsItemSingle"}
                   className="btn btn-sm btn-outline-secondary"
                 >
                   View

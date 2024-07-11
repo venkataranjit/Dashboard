@@ -8,7 +8,7 @@ let SideNav = () => {
         <div className="sidebar-sticky sidebar-nav">
           <ul className="nav flex-column">
             <li className="nav-item">
-              <NavLink to={"/"} className="nav-link">
+              <NavLink to={"Dashboard"} className="nav-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

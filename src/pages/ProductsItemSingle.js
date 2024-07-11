@@ -22,7 +22,7 @@ let ProductsItemSingle = () => {
               <h6 className="card-text">Single Page Product</h6>
             </div>
             <Link
-              to={"/Products"}
+              to={"/dashboard/Products"}
               className="btn btn-sm btn-outline-secondary back-btn"
             >
               Back

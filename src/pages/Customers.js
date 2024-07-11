@@ -6,7 +6,7 @@ let Customers = () => {
   useEffect(() => {
     fetch('https://dummyjson.com/users')
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => setData(data))
  }, []);
  let d = JSON.stringify(data);
   return (

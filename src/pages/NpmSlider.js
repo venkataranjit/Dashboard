@@ -17,15 +17,15 @@ let NpmSlider = () => {
         <div style={marginBottom}>
           <Carousel>
             <div>
-              <img src="assets/1.jpeg" alt=""/>
+              <img src="/assets/1.jpeg" alt=""/>
               <p className="legend">Legend 1</p>
             </div>
             <div>
-              <img src="assets/2.jpeg" alt=""/>
+              <img src="/assets/2.jpeg" alt=""/>
               <p className="legend">Legend 2</p>
             </div>
             <div>
-              <img src="assets/3.jpeg" alt=""/>
+              <img src="/assets/3.jpeg" alt=""/>
               <p className="legend">Legend 3</p>
             </div>
           </Carousel>
