@@ -2,6 +2,7 @@ import React from "react";
 import "./Products.css";
 import ProductsItem from "../components/ProductsItem";
 
+
 let Products = () => {
   let itemNameD = [
     "Product 1",
@@ -20,6 +21,7 @@ let Products = () => {
             return <ProductsItem itemName={item} />;
           })}
         </div>
+        
       </main>
     </>
   );
