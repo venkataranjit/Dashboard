@@ -1,6 +1,5 @@
 import React from "react";
 let Orders = () => {
-
   return (
     <>
       <main
@@ -20,7 +19,7 @@ let Orders = () => {
             </p>
             <p>
               <a className="btn btn-primary btn-lg" href="/" role="button">
-                Learn more »
+                Learn more » 
               </a>
             </p>
           </div>

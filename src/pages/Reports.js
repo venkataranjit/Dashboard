@@ -7,7 +7,7 @@ const Reports = () => {
   const getData = async () => {
     try {
       // const resp = await fetch("/data/wine.json");
-      const resp = await fetch('https://api.sampleapis.com/wines/reds');
+      const resp = await fetch("https://api.sampleapis.com/wines/reds");
       if (!resp.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -46,16 +46,17 @@ const Reports = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.id}</td>
-                  <td>{item.winery}</td>
-                  <td>{item.wine}</td>
-                  <td>{item.rating.average}</td>
-                  <td>{item.rating.reviews}</td>
-                  {/* <td><img src={item.image} style={{height:"100px"}}/></td> */}
-                </tr>
-              ))}
+              {data
+                .filter((item) => item.winery === "")
+                .map((item) => (
+                  <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.winery}</td>
+                    <td>{item.wine}</td>
+                    <td>{item.rating.average}</td>
+                    <td>{item.rating.reviews}</td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>
