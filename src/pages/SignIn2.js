@@ -21,7 +21,7 @@ import styles from "./SignIn.module.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -43,22 +43,24 @@ const SignIn = () => {
 
     try {
       // Fetch users from the API
-      const response = await fetch("https://dummyjson.com/users");
+      const response = await fetch(
+        "https://dummyjson.com/users"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch user data");
       }
-      const userData = await response.json();
+      const users = await response.json();
 
-      // Find user by email and password
-      const user = userData.users.find(
-        (user) => user.email === email && user.password === password
+      // Find user by email and phone
+      const user = users.find(
+        (user) => user.email === email && user.password === phone
       );
 
       if (user) {
         setError("");
         navigate("/dashboard/dashboard");
       } else {
-        setError("Invalid email or password");
+        setError("Invalid email or phone number");
       }
     } catch (error) {
       setError("Failed to authenticate. Please try again.");
@@ -74,7 +76,7 @@ const SignIn = () => {
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                 className="img-fluid"
-                alt="Sample"
+                alt="Sample image"
               />
             </div>
             <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -94,19 +96,19 @@ const SignIn = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <br />
-                <label htmlFor="password" className="sr-only">
-                  password
+                <label htmlFor="phone" className="sr-only">
+                  Phone Number
                 </label>
                 <input
-                  placeholder="Enter password"
+                  placeholder="Phone Number"
                   required
                   type="password"
                   className="form-control"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  id="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
-                <br />
+<br />
                 <div className="checkbox mb-3">
                   <label>
                     <input type="checkbox" value="remember-me" /> Remember me
