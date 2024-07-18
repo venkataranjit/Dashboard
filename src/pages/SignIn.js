@@ -68,6 +68,7 @@ const SignIn = () => {
   return (
     <>
       <section className={`${styles["vh-100"]}`}>
+        <a href="https://dummyjson.com/users" target="_black">for user details</a>
         <div className={`${styles["container-fluid"]} ${styles["h-custom"]}`}>
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-md-9 col-lg-6 col-xl-5">

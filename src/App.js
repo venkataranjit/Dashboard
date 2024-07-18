@@ -101,8 +101,12 @@ function App() {
                       <Route path="Arrays" element={<Arrays />} />
                       <Route path="Orders" element={<Orders />} />
                       <Route path="Products" element={<Products />} />
-                      <Route
+                      {/* <Route
                         path="ProductsItemSingle"
+                        element={<ProductsItemSingle />}
+                      /> */}
+                      <Route
+                        path="Products/:productId"
                         element={<ProductsItemSingle />}
                       />
                       <Route path="Customers" element={<Customers />} />
