@@ -11,6 +11,9 @@ let Header = () => {
     navigate("/signin");
     console.log("logout");
   };
+  setTimeout(()=>{
+    localStorage.removeItem("user");
+  }, 300000)
   return (
     <>
       <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
