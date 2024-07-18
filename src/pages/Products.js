@@ -24,6 +24,7 @@ let Products = () => {
                 itemBrand={item.brand}
                 itemCategory={item.category}
                 itemThumbnail={item.thumbnail}
+                itemRating={item.rating}
               />
             );
           })}
