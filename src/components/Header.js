@@ -1,7 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 let Header = () => {
+  const navigate = useNavigate();
+  const handleSignOut = () => {
+    console.log("logout");
+    // Clear local storage
+    localStorage.removeItem("user");
+    // Redirect to sign-in page
+    navigate("/signin");
+    console.log("logout");
+  };
   return (
     <>
       <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
@@ -17,9 +26,9 @@ let Header = () => {
         />
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap">
-            <Link to={"/"} className="nav-link">
+            <a href="/" className="nav-link" onClick={handleSignOut}>
               Sign out
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

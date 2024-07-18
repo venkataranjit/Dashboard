@@ -55,7 +55,7 @@ const Reports = () => {
           <tbody>
             {loading ? (
               Array(100).fill().map((_, index) => (
-                <SkeletonTheme baseColor="#333" highlightColor="#222">
+                <SkeletonTheme baseColor="#999" highlightColor="#888" key={index}>
                 <tr key={index}>
                   <td><Skeleton /></td>
                   <td><Skeleton /></td>
