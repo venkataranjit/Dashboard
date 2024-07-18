@@ -21,3 +21,21 @@
   height: 4px;
   margin-top: 5px;
 }
+.stars{
+  position: relative;
+    width: 100%;
+    top: -19px;
+}
+.stars-outline{
+  position: absolute;
+  left: 85px;
+}
+.stars-filled{
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 85px;
+}
+.bg-success{
+  fill: red !important;
+}
