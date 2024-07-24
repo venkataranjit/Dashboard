@@ -18,6 +18,7 @@ import ProductsItemSingle from "./pages/ProductsItemSingle";
 import PostReports from "./pages/PostReports";
 import NpmSlider from "./pages/NpmSlider";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import AnimatedCursor from "react-animated-cursor";
 import PrivateRouter from "./components/PrivateRouter";
 
@@ -52,6 +53,8 @@ function App() {
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="signin" element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="signIn/signup" element={<SignUp />} />
         <Route path="signout" element={<SignIn />} />
         <Route path="*" element={<Error />} />
         <Route
