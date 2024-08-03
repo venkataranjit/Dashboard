@@ -28,13 +28,13 @@ let Integrations = () => {
         setEdit(null);
         errorHandler("Todo Updated Successfully", "success");
       } else {
-        {
+        
           setTodo((prevTodo) => [
             { todoList: input, id: Date.now() },
             ...prevTodo,
           ]);
           errorHandler("Todo Added Successfully", "success");
-        }
+        
       }
       setInput("");
     }
